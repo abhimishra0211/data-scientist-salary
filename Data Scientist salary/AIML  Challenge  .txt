@@ -1,0 +1,47 @@
+AI/ML  Challenge  
+
+Question 1: What is Pandas, and why is it commonly used in data cleaning tasks?
+Answer : Panda is a python library.Pandas is the most widely used tool for data managing it contains high data managing,high data structure and manipulation 
+         tools designed to make data analysis fast and easy extracting value from pandas.
+         it commonly used in data cleaning tasks are :
+         1-Data Handling
+         2-Missing Data Handling
+         3-Data Transformation
+         4-Data Manipulation
+         5-Time Series Analysis
+         6-Integration with Other Libraries
+
+Question 2: Given a DataFrame with missing values, how would you check for missing values in each column and count the total number of missing values? 
+Answer : isnull().sum() function detect missing values in the given object.
+
+Question 3: How can you remove duplicates from a DataFrame while retaining the first occurrence of each unique row? 
+Answer : Remove duplicates from a DataFrame while retaining the first occurrence of each unique row using the drop_duplicates() method.
+
+Question 4: If you have a DataFrame with a column containing string values, how can you convert all the values in that column to lowercase?
+Answer : The values in a column to lowercase using the str.lower() method.
+ 
+Question 5: How do you replace missing values in a DataFrame with a specific value, like 0, for a particular column? 
+Answer : Replace missing values in a DataFrame with a specific value, such as 0, for a particular column using the fillna() method. 
+
+Question 6: If you have a DataFrame with a datetime column, how can you extract the year, month, and day into separate columns? 
+Answer : DataFrame with the column of Datetime values and use the pd. to_datetime() function to convert this column into a datetime column and finally, 
+         use the strftime() method to extract the month and year from a datetime column.
+
+Question 7: How can you filter rows in a DataFrame where a specific column's values meet a certain condition (e.g., all rows where 'age' is greater than 30)? 
+Answer : The most common way to filter a data frame according to the values of a single column is by using a comparison operator. A comparison operator evaluates 
+         therelationship between two operands (a and b) and returns True or False depending on whether or not the condition is met.
+         For example:- df['Age'] > 30 creates a boolean mask indicating True for rows where the 'Age' column values are greater than 30 and False otherwise. 
+                       This mask is used to index the DataFrame df, returning a new DataFrame filtered_df containing only the rows where the condition 
+                       'Age' > 30 is True.
+
+Question 8: What is the purpose of the .apply() function in Pandas, and how would you use it to create a new column based on values from existing columns?
+Answer : Using apply() method.
+ 
+Question 9: Suppose you want to merge two DataFrames, 'df1' and 'df2,' on a common column 'key.' How would you perform this merge operation in Pandas? 
+Answer : Merging two DataFrames based on a common column can be done using the pd.merge() function.To merge 'df1' and 'df2' on a common column 'key'.
+         for Example :-  merge1 = pd.merge(df1, df2, on='key', how='inner')
+
+Question 10: You have a DataFrame with a column containing messy text data. How can you clean and standardize the text data (e.g., remove punctuation and convert
+             to lowercase) in that column? 
+Answer : The clean_text() function uses translate() along with str.maketrans() to remove punctuation using Python's string.punctuation,it then converts the text to 
+         lowercase using the lower() method.
